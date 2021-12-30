@@ -1,0 +1,15 @@
+#main{
+
+    margin: 0 20%;
+}
+#img-div{
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#image{
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,17 @@
+Zdarzenia:
+click
+submit
+drag
+drop
+copy
+paste
+mouseover
+load
+
+#1: Mogę zobaczyć robota
+#2: Robot jest ostylowany w indywidualny sposób
+#3: Głowa robota jest przekrzywiona o 45' za pomocą kodu JS
+#4: Lewe oko robota po kliknięciu skacze w górę i wraca na miejsce (do zmiennej przypisać setIterval(a, b), warunek na odległość od góry, po osiągnięciu danej odległości clearInterval(zmienna))
+#5: Prawe oko robota po kliknięciu znika na chwilę i pojawia na nowo (robot mruga / puszcza oko)
+#6: Prawa ręka Robota po kliknięciu odskakuje w lewo i wraca na miejsce
+#7: Robot ma dodatkową, indywidualną funkcjonalność.

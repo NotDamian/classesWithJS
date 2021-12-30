@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main id="main">
+            <header>
+                <h1 id="title">title</h1>
+            </header>
+            <div id="description-div">
+                <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Iste cumque numquam provident ratione quasi nisi praesentium laboriosam vel,
+                     voluptatum voluptatibus distinctio tenetur iusto repellat necessitatibus porro error aperiam qui tempora.</p>
+            </div>
+            <fomr id="survey-form" action="#" method="get">
+                <label for="name" id="name-label">name</label>
+                <input name="name" type="text" id="name" placeholder="Your name">
+                <br><br>
+
+                <label for="email" id="email-label">email</label>
+                <input name="email" type="email" id="email" placeholder="yourEmail@gmail.com" required>
+                <br><br>
+
+                <label for="number" id="number-label">number (0-10)</label>
+                <input name="number" type="number" id="number" min="0" max="10" placeholder="4" required>
+                <br><br>
+
+                <label for="dropdown">choose:</label>
+                <select id="dropdown" name="dropdown">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+
+                <div class="radio">
+                    <p>radio</p>
+                    <input type="radio"  id="radio1" name="radio" value="radio1">
+                    <label for="radio1">radio1</label><br>
+
+                    <input type="radio" id="radio2" name="radio" value="radio1">
+                    <label for="radio2">radio2</label><br>
+
+                    <input type="radio" id="radio3" name="radio" value="radio1">
+                    <label for="radio3">radio3</label><br>
+                    <br>
+                </div>
+
+                <div class="checkbox">
+                    <p>Checkbox</p>
+                    <input type="checkbox" id="vv1" name="checkbox" value="v1">
+                    <label for="vv1"> value 1</label><br>
+
+                    <input type="checkbox" id="vv2" name="checkbox" value="v2">
+                    <label for="vv2"> value 2</label><br>
+
+                    <input type="checkbox" id="vv3" name="checkbox" value="v3">
+                    <label for="vv3"> value 3</label><br><br>
+                </div>
+
+                <label for="textarea">textarea</label><br>
+                <textarea id="textarea" name="textarea" placeholder="text area"></textarea>
+                <br>
+
+                <button id="submit" class="submit" type="submit">Submit</button>
+
+            </fomr>
+        </main>
+    </body>
+</html>

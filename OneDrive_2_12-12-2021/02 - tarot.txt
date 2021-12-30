@@ -1,0 +1,3 @@
+#1: Mam działający program rozlosowujący karty z talii 22
+Kolejny próg:
+#2: Program wyświetla również karty

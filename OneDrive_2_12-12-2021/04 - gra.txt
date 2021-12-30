@@ -1,0 +1,9 @@
+#1: Wymyśliłem rodzaj gry
+#2: Opracowałem prostą mechanikę działania
+#3: Mechanikę przedstawiłem jako plik tekstowy w punktach
+#4: Stworzyłem graficzny algorytm / pseudokod
+#5: Napisałem działającą grę
+#6: Gra jest atrakcyjna wizualnie
+
+(jak ktoś nie ma pomysłu, może być np. jakieś proste Memory)
+(to samo może się tyczyć aplikacji)
