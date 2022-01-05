@@ -2,6 +2,6 @@
 #2: Auto jest ostylowane w sposób indywidualny
 #3: Auto zostało zdefiniowane jako obiekt JS
 #4: Właściwości obiektu zmieniają się z poziomu JS pod wpływem przekazywanych danych
-#5: Dane przekazywane do obiektu zdefiniowane są w sposób statyczny 
+#5: Dane przekazywane do obiektu zdefiniowane są w sposób statyczny
 Kolejny próg:
 #6: Dane przekazywane do obiektu definiowane są dynamicznie (prompt)
