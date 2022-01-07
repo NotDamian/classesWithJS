@@ -1,49 +1,91 @@
-let car = {
-    marka: "opel",
-    rok: 2000,
-    kolor: "red"
-};
-let cb2 = document.querySelector(".carBody2");
-cb2.style.background= "red";
-let cb1 = document.querySelector(".carBody1");
-cb1.style.background= "red";
-function zmienMarke(){
-    console.log(car.marka);
-    let nowaMarka = prompt("Podaj nowa marke: ");
-    car.marka = nowaMarka;
-    console.log(car.marka);
-    let spanMarka = document.querySelector("#marka").innerHTML = nowaMarka;
-    console.log("Po zmianie: ");
-    console.log(car);
+//#3: Głowa robota jest przekrzywiona o 45' za pomocą kodu JS
+let robotHead = document.querySelector("#head");
+robotHead.style.transform = "rotate(45deg)";
+
+//#4: Lewe oko robota po kliknięciu skacze w górę i wraca na miejsce
+//(do zmiennej przypisać setIterval(a, b), warunek na odległość od góry,
+//po osiągnięciu danej odległości clearInterval(zmienna))
+function jumpF2(top, left){
+    let elem = document.querySelector(".loko");
+    let posTop = top;
+    let posLeft = left;
+    let id = setInterval(frame, 5);
+    function frame() {
+        if (posTop == 4) {
+            clearInterval(id);
+        } else {
+            posTop++;
+            posLeft++;
+            elem.style.top = posTop + 'px';
+            elem.style.left = posLeft + 'px';
+        }
+    }
 }
-function zmienRok(){
-    console.log(car.rok);
-    let nowyRok = prompt("Podaj nowa rok: ");
-    car.rok = nowyRok;
-    console.log(car.rok);
-    let spanRok = document.querySelector("#rok").innerHTML = nowyRok;
-    console.log("Po zmianie: ");
-    console.log(car);
+function jumpF() {
+    let elem = document.querySelector(".loko");
+    let posTop = 4;
+    let posLeft = 15;
+    let id = setInterval(frame, 5);
+    function frame() {
+        if (posTop == -20) {
+            jumpF2(posTop, posLeft);
+            clearInterval(id);
+        } else {
+            posTop--;
+            posLeft--;
+            elem.style.top = posTop + 'px';
+            elem.style.left = posLeft + 'px';
+        }
+    }
 }
-function zmienKolor(){
-    console.log(car.kolor);
-    let nowyKolor = prompt("Podaj nowy kolor po angielsku: ");
-    car.kolor = nowyKolor;
-    console.log(car.kolor);
-    let spanKolor = document.querySelector("#kolor").innerHTML = nowyKolor;
-    cb1.style.background= car.kolor;
-    cb2.style.background= car.kolor;
-    console.log("Po zmianie: ");
-    console.log(car);
+let leftEye = document.querySelector("#leye");
+leftEye.addEventListener("click", jumpF);
+
+//#5: Prawe oko robota po kliknięciu znika na chwilę i pojawia na nowo
+// (robot mruga / puszcza oko)//
+function sleep (time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  }
+function mm(){
+    rightEye.classList.remove("o");
+    sleep(400).then(() => {
+        rightEye.classList.add("o");
+    });
 }
+let rightEye = document.querySelector("#reye");
+rightEye.addEventListener("click", mm);
+
+//#6: Prawa ręka Robota po kliknięciu odskakuje w lewo i wraca na miejsce
+function rekaF(){
+    console.log("hi");
+    //let elem = document.querySelector(".loko");
+    let counter = 0;
+    let id = setInterval(frame, 2);
+    function frame() {
+        if (counter == 1) {
+            clearInterval(id);
+            sleep(400).then(() => {
+                prawaReka.style.transform = "rotate(0)";
+                prawaReka.style.left = -45 + "px";
+            });
+        } else {
+            counter++;
+            prawaReka.style.transform = "rotate(-45deg)";
+            prawaReka.style.left = 0 + "px";
+        }
+    }
+}
+let prawaReka = document.querySelector(".prawareka");
+prawaReka.addEventListener("click", rekaF);
 
 
 
-
-console.log(car);
-let btnMarka = document.querySelector("#btnMarka");
-btnMarka.addEventListener("click", zmienMarke);
-let btnRok = document.querySelector("#btnRok");
-btnRok.addEventListener("click", zmienRok);
-let btnKolor = document.querySelector("#btnKolor");
-btnKolor.addEventListener("click", zmienKolor);
+//#7: Robot ma dodatkową, indywidualną funkcjonalność.
+const colors = ["red", "green", "yellow", "grey", "blue", "dark", "pink", "orange"];
+let robot2 = document.querySelectorAll(".b");
+robot2.forEach(box =>{
+    box.addEventListener("mouseover", e => {
+        let liczba = Math.floor(Math.random() * (7 - 0 + 1)) + 0;
+        box.style.background = colors[liczba];
+    });
+})

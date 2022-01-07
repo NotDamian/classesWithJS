@@ -1,0 +1,111 @@
+@keyframes jump{
+    0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+    40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+    100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+}
+
+
+.main{
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.robot{
+    position: absolute;
+    top:20vh;
+    left: 40vw;
+}
+.b{
+    background: grey;
+    border: 2px solid black;
+}
+.glowa{
+    height: 70px;
+    width: 100px;
+    
+    top: 20vh;
+    left: 40vw;
+}
+.o{
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.poko{
+    position: absolute;
+    top: 4px;
+    left: 60px;
+}
+.loko{
+    position: absolute;
+    top: 4px;
+    left: 15px;
+}
+.jump{
+    animation: jump .5s linear alternate infinite;
+}
+.nos{
+    width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 20px solid #333333;
+	margin: 20px auto 0;
+    position: absolute;
+    top: 8px;
+    left: 40px;
+}
+.usta{
+    width: 50px;
+    height: 10px;
+    background: #FFF;
+    border: 2px solid black;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 5px;
+    left: 25px;
+}
+.klatka{
+    height: 200px;
+    width: 130px;
+    position: absolute;
+    top: 70;
+    left: -15px;
+    z-index: 3;
+}
+.lewanoga{
+    height: 140px;
+    width: 30px;
+    position: absolute;
+    top: 270px;
+    left: 5px;
+}
+.prawanoga{
+    height: 140px;
+    width: 30px;
+    position: absolute;
+    top: 270px;
+    left: 65px;
+}
+.prawareka{
+    height: 150px;
+    width: 30px;
+    position: absolute;
+    top: 70px;
+    left: -45px;
+}
+.lewareka{
+    height: 150px;
+    width: 30px;
+    position: absolute;
+    top: 70px;
+    left: 115px;
+}
+#prawaR{
+    z-index: 100;
+}
+
