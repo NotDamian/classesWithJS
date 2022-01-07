@@ -1,0 +1,63 @@
+body{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    background: rgb(245,214,61);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+.poleGry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.poleWalki{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area{
+    height: 50vh;
+    width: 250px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.btnChoice{
+    width: 10vw;
+    height: 10vh;
+}
+.imgChoice{
+    width: 10vw;
+    height: 10vh;
+    border: 2px solid black;
+    margin-top: 7vh;
+}
+.imgChoice:hover{
+    cursor: pointer;
+}
+.napisChoice{
+    position: absolute;
+    bottom: 20vh;
+    left: 45%;
+}
+.displayNone{
+    display: none;
+}

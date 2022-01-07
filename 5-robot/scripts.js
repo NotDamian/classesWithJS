@@ -48,7 +48,7 @@ function sleep (time) {
   }
 function mm(){
     rightEye.classList.remove("o");
-    sleep(400).then(() => {
+    sleep(300).then(() => {
         rightEye.classList.add("o");
     });
 }

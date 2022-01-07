@@ -1,0 +1,7 @@
+Kamień papier noźyce
+Zasady:
+kamien wygrywa z noźycami ale przegrywa z papierem
+noyce wygrywaja z papierem ale przegrywaja z kamieniem
+papier wygrywa z kamieniem ale przegrywa z noźycami
+
+jesli wygrasz zostaje ci dodany 1 punkt a jesli przegrasz twojemu przeciwnikowi dodaje sie punkt.
