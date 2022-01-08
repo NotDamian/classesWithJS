@@ -8,6 +8,6 @@
 
 Do myślenia:
 Kolejny próg:
-#8: lokalizacja okrętu wyznaczana losowo (3 okręty) 
+#8: lokalizacja okrętu wyznaczana losowo (3 okręty)
 Kolejny próg:
 #9: lokalizacja okrętu wyznaczana losowo, jednak zawsze 3 pola obok siebie (StackOverflow, Google, Youtube :) )
